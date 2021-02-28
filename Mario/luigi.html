@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Luigi</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="jquery.stellar.min.js"></script>
+	
+
+</head>
+<body>
+
+<style type="text/css">
+	*{
+	margin: 0;
+	padding: 0;
+}
+body {
+background-image: url(layer06_sky.png);
+z-index: -100;
+background-size: cover;
+overflow-y: hidden;
+
+
+}
+#ground{
+	background-image: url(layer01_ground.png);
+	height: 1080px;
+	width: 1920px;
+	position: absolute;
+	background-size: cover;
+	background-size:100% 100vh;
+	/*background-repeat:no-repeat;*/
+	z-index: 5;
+}
+#rocks{
+	background-image: url(layer05_rocks.png);
+	height: 1080px;
+	width: 1920px;
+	position: absolute;
+	background-size: cover;
+	background-size:100% 100vh;
+	background-repeat:no-repeat;
+	z-index: 1;
+}
+#cake{
+	background-image: url(layer02_cake.png);
+	height: 1080px;
+	width: 1920px;
+	position: absolute;
+	background-size: cover;
+	background-size:100% 100vh;
+	background-repeat:no-repeat;
+	z-index: 4;
+}
+#trees{
+	background-image: url(layer03_trees.png);
+	height: 1080px;
+	width: 1920px;
+	position: absolute;
+	background-size: cover;
+	background-size:100% 100vh;
+	background-repeat:no-repeat;
+	z-index: 3;
+}
+#clouds{
+	background-image: url(layer04_clouds.png);
+	height: 1080px;
+	width: 1920px;
+	position: absolute;
+	background-size: cover;
+	background-size:100% 100vh;
+	background-repeat:no-repeat;
+	z-index: 2;
+
+}
+#jameen{
+	background-image: url(jameen1.png);
+	height: 1080px;
+	width: 1920px;
+	/*position: absolute;*/
+	background-size: cover;
+	background-size:100% 100vh;
+	/*background-repeat:no-repeat;*/
+	z-index: 5;
+}
+#patthar{
+	background-image: url(patthar2.png);
+	height: 1080px;
+	width: 1920px;
+	/*position: absolute;*/
+	background-size: cover;
+	background-size:100% 100vh;
+	background-repeat:no-repeat;
+	z-index: 4;
+}
+#pahar{
+	background-image: url(pahar3.png);
+	height: 1080px;
+	width: 1920px;
+	/*position: absolute;*/
+	background-size: cover;
+	background-size:100% 100vh;
+	background-repeat:no-repeat;
+	z-index: 3;
+}
+#badal{
+	background-image: url(badal4.png);
+	height: 1080px;
+	width: 1920px;
+	/*position: absolute;*/
+	background-size: cover;
+	background-size:100% 100vh;
+	background-repeat:no-repeat;
+	z-index: 2;
+
+}
+#hill{
+	background-image: url(hill5.png);
+	height: 1080px;
+	width: 1920px;
+	/*position: absolute;*/
+	background-size: cover;
+	background-size:100% 100vh;
+	background-repeat:no-repeat;
+	z-index: 1;
+}
+.forest {
+	right: 100%;
+	transform-origin: right;
+}
+
+
+</style>
+<div class="candy">
+<div id="ground" data-stellar-ratio= "0.5" data-stellar-vertical-offset= "1500"></div>
+<div id="cake" data-stellar-ratio= "0.4"></div>
+<div id="trees" data-stellar-ratio= "0.35"></div>
+<div id="clouds" data-stellar-ratio= "0.3"></div>
+<div id="rocks" data-stellar-ratio= "0.25"></div>
+</div>
+<div class="forest" data-stellar-horizontal-offset= "5000">
+<div id="jameen" data-stellar-ratio= "0.5" ></div>
+<div id="patthar" data-stellar-ratio= "0.4"></div>
+<div id="pahar" data-stellar-ratio= "0.35"></div>
+<div id="badal" data-stellar-ratio= "0.3"></div>
+<div id="pola" data-stellar-ratio= "0.25"></div>
+</div>
+
+
+<script type="text/javascript">
+	
+	$('body').stellar({verticalScrolling: false});
+
+
+
+</script>
+
+
+</body>
+
+
+
+</html>
